@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    font-family: "Raleway", sans-serif;
+}
+$black:#0c0c0c;
+$white:#fefefe;
+$blue: #273eea;
+
+header{
+    background-color: $black;
+    color:$white;
+
+    button{
+        background-color: transparent;
+        text-transform: uppercase;
+        color:white;
+        border:none;
+        padding:7px 12px;
+        transition:250ms;
+
+        &:hover{
+            background-color: lighten($color: $black, $amount: 10);
+        }
+    }
+}

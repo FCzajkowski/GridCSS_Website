@@ -1,12 +1,12 @@
 <script>
-    import Header from './lib/header.svelte';
+  import Router from 'svelte-spa-router';
+  import Home from './routes/Home.svelte';
+  import GetStarted from './routes/Get-Stared.svelte';
 
-    const LINK = "https://cdn.jsdelivr.net/gh/FCzajkowski/GridCSS/grid.css";
-    const GITHUB_LINK = "https://github.com/FCzajkowski/GridCSS";
+  const routes = {
+    '/': Home,
+    '/GetStarted': GetStarted
+  };
 </script>
 
-<style lang="scss">
-    @use "style";
-</style>
-
-<Header />
+<Router {routes} />

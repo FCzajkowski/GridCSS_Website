@@ -3,23 +3,36 @@
     font-family: "Raleway", sans-serif;
 }
 $black:#0c0c0c;
+$gray:#111;
 $white:#fefefe;
 $blue: #273eea;
 
 header{
-    background-color: $black;
-    color:$white;
-
+    padding:0;
+    margin:0;
     button{
+        height:100%;
         background-color: transparent;
         text-transform: uppercase;
         color:white;
         border:none;
-        padding:7px 12px;
+        padding:10px 20px;
         transition:250ms;
 
         &:hover{
-            background-color: lighten($color: $black, $amount: 10);
+            background-color: darken($color: $white, $amount: 90);
         }
     }
+
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+
+.website{
+    background-color: $gray;
+    color:$white;
+    min-height:100vh;
 }
